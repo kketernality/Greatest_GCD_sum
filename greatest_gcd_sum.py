@@ -26,7 +26,7 @@ table = [[] for i in xrange(0, 64, 1)]
 # Execution
 build_table(input_data, table)
 i = 63
-while(i > 0):
+while i > 0:
     if len(table[i]) >= 2:
         a = table[i][0]
         b = table[i][1]
