@@ -49,9 +49,9 @@ for gcd in xrange(63, 0, -1):
             if rowA[i] == 1:
                 table[i, A] = 0
                 cnts[i] -= 1
-        # remove B frome table
+        # remove B from table
         B = get_leftmost(table[gcd])
-        rowB = get_divisors(input_data[B])  
+        rowB = get_divisors(input_data[B])
         for i in xrange(64):
             if rowB[i] == 1:
                 table[i, B] = 0
