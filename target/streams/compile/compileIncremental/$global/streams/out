@@ -1,0 +1,41 @@
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set(/home/kketernality/Github/Greatest_GCD_sum/greatest_gcd_sum.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/home/kketernality/Github/Greatest_GCD_sum/greatest_gcd_sum.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/kketernality/Github/Greatest_GCD_sum/greatest_gcd_sum.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/kketernality/Github/Greatest_GCD_sum/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.11:component from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.11:component from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 5ab907c1, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes:/home/kketernality/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/kketernality/Github/Greatest_GCD_sum/target/scala-2.11/classes:/home/kketernality/.ivy2/cache/edu.berkeley.cs/chisel_2.11/jars/chisel_2.11-2.2.33.jar:/home/kketernality/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar[0m
+[0m[[33mwarn[0m] [0mthere were 5 feature warnings; re-run with -feature for details[0m
+[0m[[33mwarn[0m] [0mone warning found[0m
+[0m[[0mdebug[0m] [0mScala compilation took 4.780555873 s[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /home/kketernality/Github/Greatest_GCD_sum/greatest_gcd_sum.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /home/kketernality/Github/Greatest_GCD_sum/greatest_gcd_sum.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/kketernality/Github/Greatest_GCD_sum/greatest_gcd_sum.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/home/kketernality/Github/Greatest_GCD_sum/greatest_gcd_sum.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /home/kketernality/Github/Greatest_GCD_sum/greatest_gcd_sum.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	assert, nextIndex, hasExplicitReset, notify, parent, addNode, children, verify, name, grestest_gcd_sum, printfs, addAssignment, addPin, out_indexA, wait, whenCond, $asInstanceOf, setName, <>, _clock, equals, setModuleName, out_gcd, bindings, names, resetPin, asInstanceOf, verifyWireWrap, switchKeys, addClock, params, synchronized, traversal, markComponent, verilog_parameters, bfs, $isInstanceOf, in_valid, moduleName, out_valid, greatest_gcd_sum, addDefaultReset, addResetPin, notifyAll, named, resets, debug, isInstanceOf, dfs, assignments, asserts, nindex, <init>, stripComponent, clocks, reportWireWrap, clock, apply, printf, nodes, out_indexB, ==, reset_=, clone, whenConds, neededWireWraps, $init$, addModule$default$2, addModule, reset, hasExplicitClock, toString, io, !=, getClass, in_number, findBinding, addPin$default$2, _reset, ne, hasWhenCond, getPathName, eq, debugs, getPathName$default$1, wires, ##, finalize, hashCode, level.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Previously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] All newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
