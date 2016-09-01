@@ -1,3 +1,7 @@
+'''
+This file demonstrates the potential for this algorithm to be implemented in hardware. 
+'''
+
 import numpy as np
 
 # This function will be implemented as ROM to speed up the system
@@ -26,7 +30,7 @@ def get_leftmost(entry):
 input_data = [21, 8, 5, 21, 11, 12]
 
 # Table is a bitmap to record all divisors of the input numbers
-# row => divisor, col => index of number 
+# row => divisor, col => index of number
 # e.g. Table[i] records the numbers which have divisor i
 table = np.zeros((64, 64))
 cnts = np.zeros(64)

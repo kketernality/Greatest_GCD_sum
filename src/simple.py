@@ -1,3 +1,7 @@
+'''
+This file provides a proof of concept for the algorithm described in README.
+'''
+
 def get_divisors(num):
     # Implemented as ROM
     divisors = []
@@ -5,7 +9,7 @@ def get_divisors(num):
         if num % n == 0:
             divisors.append(n)
     return divisors
-    
+
 def build_table(input_data, table):
     # Execution Routine 1
     for index, num in enumerate(input_data):
@@ -13,7 +17,7 @@ def build_table(input_data, table):
         for divisor in divisors:
             table[divisor].append(index)
 
-def remove_from_table(input_data, table, index): 
+def remove_from_table(input_data, table, index):
     # Execution Routine 2
     divisors = get_divisors(input_data[index])
     for divisor in divisors:
