@@ -1,5 +1,5 @@
 '''
-This file demonstrates the potential for this algorithm to be implemented in hardware. 
+This file demonstrates the potential for this algorithm to be implemented in hardware.
 '''
 
 import numpy as np

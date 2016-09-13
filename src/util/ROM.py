@@ -4,7 +4,7 @@ This file makes use of `myhdl` to do RTL-level design.
 
 from myhdl import *
 
-def Divisors_ROM(addr, dout):
+def DivisorsROM(addr, dout):
     ''' This ROM records the divisors for numbers ranging from 1~63 '''
     ROM = (
         0B0000000000000000000000000000000000000000000000000000000000000000, #0
@@ -85,7 +85,7 @@ if __name__ == '__main__':
         addr = Signal(intbv(0)[8:])  # 8 bits address
         dout = Signal(intbv(0)[64:]) # 64 bits data
 
-        ROM = Divisors_ROM(addr, dout)
+        testee = DivisorsROM(addr, dout)
 
         def get_divisors(n):
             row = 0
@@ -99,12 +99,13 @@ if __name__ == '__main__':
             for n in xrange(64):
                 addr.next = n
                 yield delay(1)
+                truth = get_divisors(n)
                 print 'int:', str(now()-1).rjust(2),
-                print 'exp:', str(bin(get_divisors(n))).rjust(64, str(0)),
+                print 'exp:', str(bin(truth)).rjust(64, str(0)),
                 print 'got:', str(bin(dout)).rjust(64, str(0))
-                assert dout == get_divisors(n)
+                assert dout == truth, ()
 
-        return ROM, tester
+        return tester, testee
 
     sim = Simulation(testbench())
     sim.run()
