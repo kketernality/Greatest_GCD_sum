@@ -3,16 +3,15 @@ This file makes use of `myhdl` to do RTL-level design.
 '''
 
 from myhdl import *
-from ROM import *
-from RAM import *
-from PriorityEncoder import *
+from util import *
 
 state_t = enum('IDLE','INPUT','BUILD','TAKE','COMP')
 
 def Clkgen(clk):
     @always(delay(1))
-    def gener():
+    def gen():
         clk.next = not clk
+    return gen
 
 def Top():
     clk = Signal(bool(0))
@@ -55,3 +54,6 @@ def Top():
             raise ValueError('Unknown state')
 
     return inst_0, inst_1, inst_2, inst_3, main
+
+sim = Simulation(Top())
+sim.run(20)
